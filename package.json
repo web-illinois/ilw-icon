@@ -1,7 +1,7 @@
 {
-    "name": "@illinois-toolkit/<%= name %>",
+    "name": "@illinois-toolkit/ilw-icon",
     "description": "One paragraph description of the component.",
-    "repository": "github:<%= repository %>",
+    "repository": "github:web-illinois/ilw-icon",
     "private": false,
     "license": "MIT",
     "version": "0.0.1",
@@ -13,12 +13,12 @@
     ],
     "exports": {
         ".": {
-            "import": "./src/<%= name %>.js",
-            "require": "./dist/<%= name %>.cjs",
-            "default": "./dist/<%= name %>.js"
+            "import": "./src/ilw-icon.js",
+            "require": "./dist/ilw-icon.cjs",
+            "default": "./dist/ilw-icon.js"
         }
     },
-    "main":"./dist/<%= name %>.js",
+    "main":"./dist/ilw-icon.js",
     "scripts": {
         "dev": "vite",
         "build": "vite build --config vite.build.config.js --emptyOutDir",
