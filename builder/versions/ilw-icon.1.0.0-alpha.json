@@ -4,7 +4,7 @@
     "github": "https://github.com/web-illinois/ilw-icon/",
     "type": "web component",
     "element-name": "ilw-icon",
-    "description": "Description for builder.",
+    "description": "A wrapper class to pull the icons from https://cdn.brand.illinois.edu/icons.html",
     "version": "1.0.0-alpha",
     "date": "09/03/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-icon/1.0.0-alpha/ilw-icon.css",
