@@ -1,10 +1,10 @@
 {
     "name": "@illinois-toolkit/ilw-icon",
     "description": "One paragraph description of the component.",
-    "repository": "github:web-illinois/ilw-icon",
+    "repository": "github:bryanjonker-illinois/ilw-icon",
     "private": false,
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "1.0.0-alpha",
     "type": "module",
     "files": [
         "src/**",

@@ -8,10 +8,55 @@
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
     <script type="module" src="/src/ilw-icon.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          const params = new URLSearchParams(window.location.search);
+          document.querySelectorAll("ilw-icon").forEach(component => {
+            if (params.has('theme')) {
+              component.setAttribute('theme', params.get('theme'));
+            }
+            if (params.has('icon')) {
+              component.setAttribute('icon', params.get('icon'));
+            }
+            if (params.has('size')) {
+              component.setAttribute('size', params.get('size'));
+            }
+            if (params.has('type')) {
+              component.setAttribute('type', params.get('type'));
+            }
+            if (params.has('alt')) {
+              component.setAttribute('alt', params.get('alt'));
+            }
+            if (params.has('focus')) {
+              component.setAttribute('focus', 'true');
+            }
+          });
+        });
+        
+        function focusIcons() {
+            document.querySelectorAll("ilw-icon").forEach(component => {
+              if (component.hasAttribute('focus')) {
+                component.removeAttribute('focus');
+              } else {
+                component.setAttribute('focus', 'true');
+              }
+          });
+        }
+
+    </script>
 </head>
 
 <body style="margin: 0; padding: 0;">
-<ilw-icon></ilw-icon>
+    <div style="padding: 50px; background: white;">
+        <ilw-icon></ilw-icon>
+    </div>
+    <div style="padding: 50px; background: var(--il-blue);">
+        <ilw-icon></ilw-icon>
+    </div>
+    <div style="padding: 50px; background: var(--il-orange);">
+        <ilw-icon></ilw-icon>
+    </div>
+    <button class="ilw-button" onclick="focusIcons()">Focus Items</button>
 </body>
 
 </html>

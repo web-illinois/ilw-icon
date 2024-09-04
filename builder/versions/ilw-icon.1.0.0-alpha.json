@@ -6,21 +6,33 @@
     "element-name": "ilw-icon",
     "description": "Description for builder.",
     "version": "1.0.0-alpha",
-    "date": "09/04/2024",
+    "date": "09/03/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-icon/1.0.0-alpha/ilw-icon.css",
     "js": "https://dev.toolkit.illinois.edu/ilw-icon/1.0.0-alpha/ilw-icon.js",
     "production": false,
     "notes": "",
     "parent-style": "",
-    "samples": [
+    "attributes-fixed": [],
+    "attributes-text": [
         {
-            "name": "default",
-            "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "name": "icon",
+            "description": "Icon name: use the name from https://cdn.brand.illinois.edu/icons.html",
+            "depreciated": false,
+            "value": "admissions"
+        },
+        {
+            "name": "alt",
+            "description": "Alternative text, defaults to the icon name plus 'icon'",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "size",
+            "description": "Width in CSS value and unit, defaults to 48px",
+            "depreciated": false,
+            "value": ""
         }
     ],
-    "attributes-fixed": [],
-    "attributes-text": [],
     "attributes": [
         {
             "name": "theme",
@@ -31,6 +43,26 @@
                 "blue",
                 "orange",
                 "white"
+            ]
+        },
+        {
+            "name": "type",
+            "description": "Type of icon",
+            "depreciated": false,
+            "values": [
+                "",
+                "solid",
+                "line",
+                "duo"
+            ]
+        },
+        {
+            "name": "focus",
+            "description": "Whether or not a focus state is involved",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
             ]
         }
     ],
