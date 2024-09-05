@@ -35,17 +35,6 @@
     ],
     "attributes": [
         {
-            "name": "theme",
-            "description": "Color theme used",
-            "depreciated": false,
-            "values": [
-                "",
-                "blue",
-                "orange",
-                "white"
-            ]
-        },
-        {
             "name": "type",
             "description": "Type of icon",
             "depreciated": false,
@@ -55,19 +44,15 @@
                 "line",
                 "duo"
             ]
-        },
-        {
-            "name": "focus",
-            "description": "Whether or not a focus state is involved",
-            "depreciated": false,
-            "values": [
-                "",
-                "true"
-            ]
         }
     ],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [
+        {
+            "name": "--ilw-icon--color",
+            "description": "Color, defaults to currentColor",
+            "depreciated": false
+        }
     ]
 }

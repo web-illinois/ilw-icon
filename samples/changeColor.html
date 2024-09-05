@@ -30,18 +30,20 @@
           });
         });
     </script>
+    <style>
+      .test {
+        --ilw-icon--color: green;
+      }
+    </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
     <div style="padding: 50px; background: white; color: var(--il-blue);">
         <ilw-icon></ilw-icon>
     </div>
-    <div style="padding: 50px; background: var(--il-blue); color: white;">
-        <ilw-icon></ilw-icon>
-    </div>
-    <div style="padding: 50px; background: var(--il-orange); color: white;">
-        <ilw-icon></ilw-icon>
-    </div>
+    <div class="test" style="padding: 50px; background: white; color: var(--il-blue);">
+      <ilw-icon></ilw-icon>
+  </div>
 </body>
 
 </html>
