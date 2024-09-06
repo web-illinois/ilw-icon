@@ -6,7 +6,7 @@ class Icon extends LitElement {
     static get properties() {
         return {
             icon: { type: String, attribute: true },
-            weight: { type: String, attribute: true },
+            type: { type: String, attribute: true },
             alt: { type: String, attribute: true },
             size: { type: String, attribute: true }
         };
@@ -29,7 +29,7 @@ class Icon extends LitElement {
     }
 
     get maskStyle() {
-        return `-webkit-mask: url(https://cdn.brand.illinois.edu/icons/${this.type}/blue/${this.icon}.svg) no-repeat center; mask: url(https://cdn.brand.illinois.edu/icons/${this.type}/blue/${this.icon}.svg) no-repeat center;`;
+        return `-webkit-mask: url(https://cdn.brand.illinois.edu/icons/${this.type}/blue/${this.icon}.svg?no-cache) no-repeat center; mask: url(https://cdn.brand.illinois.edu/icons/${this.type}/blue/${this.icon}.svg?no-cache) no-repeat center;`;
     }
 
     get color() {

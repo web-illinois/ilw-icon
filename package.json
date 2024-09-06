@@ -4,7 +4,7 @@
     "repository": "github:bryanjonker-illinois/ilw-icon",
     "private": false,
     "license": "MIT",
-    "version": "1.0.0-alpha",
+    "version": "1.0.0-alpha1",
     "type": "module",
     "files": [
         "src/**",
