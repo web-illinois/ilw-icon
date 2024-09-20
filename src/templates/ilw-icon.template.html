@@ -29,6 +29,15 @@
             padding: 0;
             cursor: pointer;
         }
+        .preview:hover {
+            background: var(--il-blue);
+            color: #fff;
+        }
+        .preview:focus {
+            background: var(--ilw-link--focus-background-color);
+            color:  var(--ilw-link--focus-color);
+            outline: var(--ilw-link--focus-outline);
+        }
         .preview .inner {
             width: 180px;
             height: 140px;
@@ -38,15 +47,6 @@
             text-align: center;
             font-size: 84px;
             position: relative;
-        }
-        .preview .inner:hover {
-            background: var(--il-blue);
-            color: #fff;
-        }
-        .preview .inner:focus {
-            background: var(--ilw-link--focus-background-color);
-            color:  var(--ilw-link--focus-color);
-            outline: var(--ilw-link--focus-outline);
         }
 
         .preview .inner i {
