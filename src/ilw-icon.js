@@ -1,7 +1,6 @@
-import { LitElement, html, unsafeCSS } from "lit";
+import {LitElement, html, unsafeCSS, nothing} from "lit";
 import { classMap } from "lit/directives/class-map.js";
 import { styleMap } from "lit/directives/style-map.js";
-import { nothing } from "lit";
 import styles from "./ilw-icon.styles.css?inline";
 import "./ilw-icon.css";
 
@@ -10,8 +9,8 @@ class Icon extends LitElement {
         return {
             icon: { type: String, attribute: true },
             type: { type: String, attribute: true },
-            alt: { type: String, attribute: true },
             size: { type: String, attribute: true },
+            alt: { type: String, attribute: true },
         };
     }
 
@@ -23,12 +22,7 @@ class Icon extends LitElement {
         super();
         this.icon = "";
         this.type = "solid";
-        this.alt = "";
         this.size = "";
-    }
-
-    get isHidden() {
-        return this.getAttribute("aria-hidden");
     }
 
     render() {
@@ -51,9 +45,12 @@ class Icon extends LitElement {
         return html`<span
             class=${classMap(classes)}
             style=${styleMap(styles)}
-            aria-label="${this.label}"
-            aria-hidden="${this.isHidden ? "true" : nothing}"
-        ></span>`;
+                aria-hidden=${this.alt ? nothing : "true"}
+        >
+            ${ this.alt ? html`
+                <span class="sr-only">${this.alt}</span>
+            ` : '' }
+        </span>`;
     }
 }
 
