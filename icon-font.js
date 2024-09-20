@@ -52,6 +52,8 @@ getIconList().then(async (icons) => {
     let template = await readFile("src/templates/ilw-icon.template.html", "utf-8");
     template = template.replace("<!--ICONS-->", iconHtml.join("\n"));
     await writeFile("src/ilw-icon.html", template);
+
+    console.log("[\n" + icons.map(it => `"${it}"`).join(",\n") + "\n]");
 });
 
 async function generate() {
