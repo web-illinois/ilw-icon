@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
-    <link rel="stylesheet" type="text/css" href="ilw-icon.css" />
+    <link rel="stylesheet" href="./ilw-icon.css">
+    <script type="module" src="./ilw-icon.js"></script>
 
     <style>
         body {
@@ -25,6 +26,8 @@
         .preview {
             background:#fff;
             border: 1px solid var(--il-storm-lighter-3);
+            padding: 0;
+            cursor: pointer;
         }
         .preview .inner {
             width: 180px;
@@ -34,6 +37,7 @@
             align-items: center;
             text-align: center;
             font-size: 84px;
+            position: relative;
         }
         .preview .inner:hover {
             background: var(--il-blue);
@@ -47,6 +51,14 @@
 
         .preview .inner i {
             display: block;
+        }
+
+        .preview.copied .inner:after {
+            content: "Copied!";
+            position: absolute;
+            bottom: 2px;
+            font-size: 14px;
+            font-weight: bold;
         }
         .label {
             display: block;
@@ -64,1167 +76,1167 @@
     <h1>ilw-icon</h1>
 <div class="icon-list">
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-admissions"></i>
+        <button class="preview" data-icon="admissions">
+            <span class="inner">
+                <ilw-icon icon="admissions"></ilw-icon>
             </span>
             <span class='label'>admissions</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-admissions-line"></i>
+        <button class="preview" data-icon="admissions-line">
+            <span class="inner">
+                <ilw-icon icon="admissions-line"></ilw-icon>
             </span>
             <span class='label'>admissions-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-alumni"></i>
+        <button class="preview" data-icon="alumni">
+            <span class="inner">
+                <ilw-icon icon="alumni"></ilw-icon>
             </span>
             <span class='label'>alumni</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-alumni-line"></i>
+        <button class="preview" data-icon="alumni-line">
+            <span class="inner">
+                <ilw-icon icon="alumni-line"></ilw-icon>
             </span>
             <span class='label'>alumni-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-apply-now"></i>
+        <button class="preview" data-icon="apply-now">
+            <span class="inner">
+                <ilw-icon icon="apply-now"></ilw-icon>
             </span>
             <span class='label'>apply-now</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-apply-now-line"></i>
+        <button class="preview" data-icon="apply-now-line">
+            <span class="inner">
+                <ilw-icon icon="apply-now-line"></ilw-icon>
             </span>
             <span class='label'>apply-now-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-audio"></i>
+        <button class="preview" data-icon="audio">
+            <span class="inner">
+                <ilw-icon icon="audio"></ilw-icon>
             </span>
             <span class='label'>audio</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-audio-line"></i>
+        <button class="preview" data-icon="audio-line">
+            <span class="inner">
+                <ilw-icon icon="audio-line"></ilw-icon>
             </span>
             <span class='label'>audio-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-back"></i>
+        <button class="preview" data-icon="back">
+            <span class="inner">
+                <ilw-icon icon="back"></ilw-icon>
             </span>
             <span class='label'>back</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-back-line"></i>
+        <button class="preview" data-icon="back-line">
+            <span class="inner">
+                <ilw-icon icon="back-line"></ilw-icon>
             </span>
             <span class='label'>back-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-bill"></i>
+        <button class="preview" data-icon="bill">
+            <span class="inner">
+                <ilw-icon icon="bill"></ilw-icon>
             </span>
             <span class='label'>bill</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-bill-line"></i>
+        <button class="preview" data-icon="bill-line">
+            <span class="inner">
+                <ilw-icon icon="bill-line"></ilw-icon>
             </span>
             <span class='label'>bill-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-calendar"></i>
+        <button class="preview" data-icon="calendar">
+            <span class="inner">
+                <ilw-icon icon="calendar"></ilw-icon>
             </span>
             <span class='label'>calendar</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-calendar-line"></i>
+        <button class="preview" data-icon="calendar-line">
+            <span class="inner">
+                <ilw-icon icon="calendar-line"></ilw-icon>
             </span>
             <span class='label'>calendar-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-call"></i>
+        <button class="preview" data-icon="call">
+            <span class="inner">
+                <ilw-icon icon="call"></ilw-icon>
             </span>
             <span class='label'>call</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-call-line"></i>
+        <button class="preview" data-icon="call-line">
+            <span class="inner">
+                <ilw-icon icon="call-line"></ilw-icon>
             </span>
             <span class='label'>call-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-cancel"></i>
+        <button class="preview" data-icon="cancel">
+            <span class="inner">
+                <ilw-icon icon="cancel"></ilw-icon>
             </span>
             <span class='label'>cancel</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-cancel-line"></i>
+        <button class="preview" data-icon="cancel-line">
+            <span class="inner">
+                <ilw-icon icon="cancel-line"></ilw-icon>
             </span>
             <span class='label'>cancel-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-check"></i>
+        <button class="preview" data-icon="check">
+            <span class="inner">
+                <ilw-icon icon="check"></ilw-icon>
             </span>
             <span class='label'>check</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-check-line"></i>
+        <button class="preview" data-icon="check-line">
+            <span class="inner">
+                <ilw-icon icon="check-line"></ilw-icon>
             </span>
             <span class='label'>check-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-comment"></i>
+        <button class="preview" data-icon="comment">
+            <span class="inner">
+                <ilw-icon icon="comment"></ilw-icon>
             </span>
             <span class='label'>comment</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-comment-line"></i>
+        <button class="preview" data-icon="comment-line">
+            <span class="inner">
+                <ilw-icon icon="comment-line"></ilw-icon>
             </span>
             <span class='label'>comment-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-directory"></i>
+        <button class="preview" data-icon="directory">
+            <span class="inner">
+                <ilw-icon icon="directory"></ilw-icon>
             </span>
             <span class='label'>directory</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-directory-line"></i>
+        <button class="preview" data-icon="directory-line">
+            <span class="inner">
+                <ilw-icon icon="directory-line"></ilw-icon>
             </span>
             <span class='label'>directory-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-document"></i>
+        <button class="preview" data-icon="document">
+            <span class="inner">
+                <ilw-icon icon="document"></ilw-icon>
             </span>
             <span class='label'>document</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-document-line"></i>
+        <button class="preview" data-icon="document-line">
+            <span class="inner">
+                <ilw-icon icon="document-line"></ilw-icon>
             </span>
             <span class='label'>document-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-donor"></i>
+        <button class="preview" data-icon="donor">
+            <span class="inner">
+                <ilw-icon icon="donor"></ilw-icon>
             </span>
             <span class='label'>donor</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-donor-line"></i>
+        <button class="preview" data-icon="donor-line">
+            <span class="inner">
+                <ilw-icon icon="donor-line"></ilw-icon>
             </span>
             <span class='label'>donor-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-download"></i>
+        <button class="preview" data-icon="download">
+            <span class="inner">
+                <ilw-icon icon="download"></ilw-icon>
             </span>
             <span class='label'>download</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-download-line"></i>
+        <button class="preview" data-icon="download-line">
+            <span class="inner">
+                <ilw-icon icon="download-line"></ilw-icon>
             </span>
             <span class='label'>download-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-email"></i>
+        <button class="preview" data-icon="email">
+            <span class="inner">
+                <ilw-icon icon="email"></ilw-icon>
             </span>
             <span class='label'>email</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-email-line"></i>
+        <button class="preview" data-icon="email-line">
+            <span class="inner">
+                <ilw-icon icon="email-line"></ilw-icon>
             </span>
             <span class='label'>email-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-employment"></i>
+        <button class="preview" data-icon="employment">
+            <span class="inner">
+                <ilw-icon icon="employment"></ilw-icon>
             </span>
             <span class='label'>employment</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-employment-line"></i>
+        <button class="preview" data-icon="employment-line">
+            <span class="inner">
+                <ilw-icon icon="employment-line"></ilw-icon>
             </span>
             <span class='label'>employment-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-event"></i>
+        <button class="preview" data-icon="event">
+            <span class="inner">
+                <ilw-icon icon="event"></ilw-icon>
             </span>
             <span class='label'>event</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-event-line"></i>
+        <button class="preview" data-icon="event-line">
+            <span class="inner">
+                <ilw-icon icon="event-line"></ilw-icon>
             </span>
             <span class='label'>event-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-exit"></i>
+        <button class="preview" data-icon="exit">
+            <span class="inner">
+                <ilw-icon icon="exit"></ilw-icon>
             </span>
             <span class='label'>exit</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-exit-line"></i>
+        <button class="preview" data-icon="exit-line">
+            <span class="inner">
+                <ilw-icon icon="exit-line"></ilw-icon>
             </span>
             <span class='label'>exit-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-facebook"></i>
+        <button class="preview" data-icon="facebook">
+            <span class="inner">
+                <ilw-icon icon="facebook"></ilw-icon>
             </span>
             <span class='label'>facebook</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-facebook-line"></i>
+        <button class="preview" data-icon="facebook-line">
+            <span class="inner">
+                <ilw-icon icon="facebook-line"></ilw-icon>
             </span>
             <span class='label'>facebook-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-faculty"></i>
+        <button class="preview" data-icon="faculty">
+            <span class="inner">
+                <ilw-icon icon="faculty"></ilw-icon>
             </span>
             <span class='label'>faculty</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-faculty-line"></i>
+        <button class="preview" data-icon="faculty-line">
+            <span class="inner">
+                <ilw-icon icon="faculty-line"></ilw-icon>
             </span>
             <span class='label'>faculty-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-family"></i>
+        <button class="preview" data-icon="family">
+            <span class="inner">
+                <ilw-icon icon="family"></ilw-icon>
             </span>
             <span class='label'>family</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-family-line"></i>
+        <button class="preview" data-icon="family-line">
+            <span class="inner">
+                <ilw-icon icon="family-line"></ilw-icon>
             </span>
             <span class='label'>family-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-faq"></i>
+        <button class="preview" data-icon="faq">
+            <span class="inner">
+                <ilw-icon icon="faq"></ilw-icon>
             </span>
             <span class='label'>faq</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-faq-line"></i>
+        <button class="preview" data-icon="faq-line">
+            <span class="inner">
+                <ilw-icon icon="faq-line"></ilw-icon>
             </span>
             <span class='label'>faq-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-favorite"></i>
+        <button class="preview" data-icon="favorite">
+            <span class="inner">
+                <ilw-icon icon="favorite"></ilw-icon>
             </span>
             <span class='label'>favorite</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-favorite-line"></i>
+        <button class="preview" data-icon="favorite-line">
+            <span class="inner">
+                <ilw-icon icon="favorite-line"></ilw-icon>
             </span>
             <span class='label'>favorite-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-gift"></i>
+        <button class="preview" data-icon="gift">
+            <span class="inner">
+                <ilw-icon icon="gift"></ilw-icon>
             </span>
             <span class='label'>gift</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-gift-line"></i>
+        <button class="preview" data-icon="gift-line">
+            <span class="inner">
+                <ilw-icon icon="gift-line"></ilw-icon>
             </span>
             <span class='label'>gift-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-give"></i>
+        <button class="preview" data-icon="give">
+            <span class="inner">
+                <ilw-icon icon="give"></ilw-icon>
             </span>
             <span class='label'>give</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-give-line"></i>
+        <button class="preview" data-icon="give-line">
+            <span class="inner">
+                <ilw-icon icon="give-line"></ilw-icon>
             </span>
             <span class='label'>give-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-google-plus"></i>
+        <button class="preview" data-icon="google-plus">
+            <span class="inner">
+                <ilw-icon icon="google-plus"></ilw-icon>
             </span>
             <span class='label'>google-plus</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-google-plus-line"></i>
+        <button class="preview" data-icon="google-plus-line">
+            <span class="inner">
+                <ilw-icon icon="google-plus-line"></ilw-icon>
             </span>
             <span class='label'>google-plus-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-handbook"></i>
+        <button class="preview" data-icon="handbook">
+            <span class="inner">
+                <ilw-icon icon="handbook"></ilw-icon>
             </span>
             <span class='label'>handbook</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-handbook-line"></i>
+        <button class="preview" data-icon="handbook-line">
+            <span class="inner">
+                <ilw-icon icon="handbook-line"></ilw-icon>
             </span>
             <span class='label'>handbook-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-home"></i>
+        <button class="preview" data-icon="home">
+            <span class="inner">
+                <ilw-icon icon="home"></ilw-icon>
             </span>
             <span class='label'>home</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-home-line"></i>
+        <button class="preview" data-icon="home-line">
+            <span class="inner">
+                <ilw-icon icon="home-line"></ilw-icon>
             </span>
             <span class='label'>home-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-hours"></i>
+        <button class="preview" data-icon="hours">
+            <span class="inner">
+                <ilw-icon icon="hours"></ilw-icon>
             </span>
             <span class='label'>hours</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-hours-line"></i>
+        <button class="preview" data-icon="hours-line">
+            <span class="inner">
+                <ilw-icon icon="hours-line"></ilw-icon>
             </span>
             <span class='label'>hours-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-hr"></i>
+        <button class="preview" data-icon="hr">
+            <span class="inner">
+                <ilw-icon icon="hr"></ilw-icon>
             </span>
             <span class='label'>hr</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-hr-line"></i>
+        <button class="preview" data-icon="hr-line">
+            <span class="inner">
+                <ilw-icon icon="hr-line"></ilw-icon>
             </span>
             <span class='label'>hr-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-image"></i>
+        <button class="preview" data-icon="image">
+            <span class="inner">
+                <ilw-icon icon="image"></ilw-icon>
             </span>
             <span class='label'>image</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-image-line"></i>
+        <button class="preview" data-icon="image-line">
+            <span class="inner">
+                <ilw-icon icon="image-line"></ilw-icon>
             </span>
             <span class='label'>image-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-inclusive"></i>
+        <button class="preview" data-icon="inclusive">
+            <span class="inner">
+                <ilw-icon icon="inclusive"></ilw-icon>
             </span>
             <span class='label'>inclusive</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-inclusive-line"></i>
+        <button class="preview" data-icon="inclusive-line">
+            <span class="inner">
+                <ilw-icon icon="inclusive-line"></ilw-icon>
             </span>
             <span class='label'>inclusive-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-info"></i>
+        <button class="preview" data-icon="info">
+            <span class="inner">
+                <ilw-icon icon="info"></ilw-icon>
             </span>
             <span class='label'>info</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-info-line"></i>
+        <button class="preview" data-icon="info-line">
+            <span class="inner">
+                <ilw-icon icon="info-line"></ilw-icon>
             </span>
             <span class='label'>info-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-instagram"></i>
+        <button class="preview" data-icon="instagram">
+            <span class="inner">
+                <ilw-icon icon="instagram"></ilw-icon>
             </span>
             <span class='label'>instagram</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-instagram-line"></i>
+        <button class="preview" data-icon="instagram-line">
+            <span class="inner">
+                <ilw-icon icon="instagram-line"></ilw-icon>
             </span>
             <span class='label'>instagram-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-intranet"></i>
+        <button class="preview" data-icon="intranet">
+            <span class="inner">
+                <ilw-icon icon="intranet"></ilw-icon>
             </span>
             <span class='label'>intranet</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-intranet-line"></i>
+        <button class="preview" data-icon="intranet-line">
+            <span class="inner">
+                <ilw-icon icon="intranet-line"></ilw-icon>
             </span>
             <span class='label'>intranet-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-job"></i>
+        <button class="preview" data-icon="job">
+            <span class="inner">
+                <ilw-icon icon="job"></ilw-icon>
             </span>
             <span class='label'>job</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-job-line"></i>
+        <button class="preview" data-icon="job-line">
+            <span class="inner">
+                <ilw-icon icon="job-line"></ilw-icon>
             </span>
             <span class='label'>job-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-less"></i>
+        <button class="preview" data-icon="less">
+            <span class="inner">
+                <ilw-icon icon="less"></ilw-icon>
             </span>
             <span class='label'>less</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-less-line"></i>
+        <button class="preview" data-icon="less-line">
+            <span class="inner">
+                <ilw-icon icon="less-line"></ilw-icon>
             </span>
             <span class='label'>less-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-link"></i>
+        <button class="preview" data-icon="link">
+            <span class="inner">
+                <ilw-icon icon="link"></ilw-icon>
             </span>
             <span class='label'>link</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-link-line"></i>
+        <button class="preview" data-icon="link-line">
+            <span class="inner">
+                <ilw-icon icon="link-line"></ilw-icon>
             </span>
             <span class='label'>link-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-linkedin"></i>
+        <button class="preview" data-icon="linkedin">
+            <span class="inner">
+                <ilw-icon icon="linkedin"></ilw-icon>
             </span>
             <span class='label'>linkedin</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-linkedin-line"></i>
+        <button class="preview" data-icon="linkedin-line">
+            <span class="inner">
+                <ilw-icon icon="linkedin-line"></ilw-icon>
             </span>
             <span class='label'>linkedin-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-location"></i>
+        <button class="preview" data-icon="location">
+            <span class="inner">
+                <ilw-icon icon="location"></ilw-icon>
             </span>
             <span class='label'>location</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-location-line"></i>
+        <button class="preview" data-icon="location-line">
+            <span class="inner">
+                <ilw-icon icon="location-line"></ilw-icon>
             </span>
             <span class='label'>location-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-manual"></i>
+        <button class="preview" data-icon="manual">
+            <span class="inner">
+                <ilw-icon icon="manual"></ilw-icon>
             </span>
             <span class='label'>manual</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-manual-line"></i>
+        <button class="preview" data-icon="manual-line">
+            <span class="inner">
+                <ilw-icon icon="manual-line"></ilw-icon>
             </span>
             <span class='label'>manual-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-menu"></i>
+        <button class="preview" data-icon="menu">
+            <span class="inner">
+                <ilw-icon icon="menu"></ilw-icon>
             </span>
             <span class='label'>menu</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-menu-line"></i>
+        <button class="preview" data-icon="menu-line">
+            <span class="inner">
+                <ilw-icon icon="menu-line"></ilw-icon>
             </span>
             <span class='label'>menu-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-more"></i>
+        <button class="preview" data-icon="more">
+            <span class="inner">
+                <ilw-icon icon="more"></ilw-icon>
             </span>
             <span class='label'>more</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-more-line"></i>
+        <button class="preview" data-icon="more-line">
+            <span class="inner">
+                <ilw-icon icon="more-line"></ilw-icon>
             </span>
             <span class='label'>more-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-news"></i>
+        <button class="preview" data-icon="news">
+            <span class="inner">
+                <ilw-icon icon="news"></ilw-icon>
             </span>
             <span class='label'>news</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-news-line"></i>
+        <button class="preview" data-icon="news-line">
+            <span class="inner">
+                <ilw-icon icon="news-line"></ilw-icon>
             </span>
             <span class='label'>news-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-next"></i>
+        <button class="preview" data-icon="next">
+            <span class="inner">
+                <ilw-icon icon="next"></ilw-icon>
             </span>
             <span class='label'>next</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-next-line"></i>
+        <button class="preview" data-icon="next-line">
+            <span class="inner">
+                <ilw-icon icon="next-line"></ilw-icon>
             </span>
             <span class='label'>next-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-notification"></i>
+        <button class="preview" data-icon="notification">
+            <span class="inner">
+                <ilw-icon icon="notification"></ilw-icon>
             </span>
             <span class='label'>notification</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-notification-line"></i>
+        <button class="preview" data-icon="notification-line">
+            <span class="inner">
+                <ilw-icon icon="notification-line"></ilw-icon>
             </span>
             <span class='label'>notification-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-parent"></i>
+        <button class="preview" data-icon="parent">
+            <span class="inner">
+                <ilw-icon icon="parent"></ilw-icon>
             </span>
             <span class='label'>parent</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-parent-line"></i>
+        <button class="preview" data-icon="parent-line">
+            <span class="inner">
+                <ilw-icon icon="parent-line"></ilw-icon>
             </span>
             <span class='label'>parent-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-partners"></i>
+        <button class="preview" data-icon="partners">
+            <span class="inner">
+                <ilw-icon icon="partners"></ilw-icon>
             </span>
             <span class='label'>partners</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-partners-line"></i>
+        <button class="preview" data-icon="partners-line">
+            <span class="inner">
+                <ilw-icon icon="partners-line"></ilw-icon>
             </span>
             <span class='label'>partners-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-pay"></i>
+        <button class="preview" data-icon="pay">
+            <span class="inner">
+                <ilw-icon icon="pay"></ilw-icon>
             </span>
             <span class='label'>pay</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-pay-line"></i>
+        <button class="preview" data-icon="pay-line">
+            <span class="inner">
+                <ilw-icon icon="pay-line"></ilw-icon>
             </span>
             <span class='label'>pay-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-phone"></i>
+        <button class="preview" data-icon="phone">
+            <span class="inner">
+                <ilw-icon icon="phone"></ilw-icon>
             </span>
             <span class='label'>phone</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-phone-line"></i>
+        <button class="preview" data-icon="phone-line">
+            <span class="inner">
+                <ilw-icon icon="phone-line"></ilw-icon>
             </span>
             <span class='label'>phone-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-pinterest"></i>
+        <button class="preview" data-icon="pinterest">
+            <span class="inner">
+                <ilw-icon icon="pinterest"></ilw-icon>
             </span>
             <span class='label'>pinterest</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-pinterest-line"></i>
+        <button class="preview" data-icon="pinterest-line">
+            <span class="inner">
+                <ilw-icon icon="pinterest-line"></ilw-icon>
             </span>
             <span class='label'>pinterest-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-plan"></i>
+        <button class="preview" data-icon="plan">
+            <span class="inner">
+                <ilw-icon icon="plan"></ilw-icon>
             </span>
             <span class='label'>plan</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-plan-line"></i>
+        <button class="preview" data-icon="plan-line">
+            <span class="inner">
+                <ilw-icon icon="plan-line"></ilw-icon>
             </span>
             <span class='label'>plan-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-program-of-study"></i>
+        <button class="preview" data-icon="program-of-study">
+            <span class="inner">
+                <ilw-icon icon="program-of-study"></ilw-icon>
             </span>
             <span class='label'>program-of-study</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-program-of-study-line"></i>
+        <button class="preview" data-icon="program-of-study-line">
+            <span class="inner">
+                <ilw-icon icon="program-of-study-line"></ilw-icon>
             </span>
             <span class='label'>program-of-study-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-reddit"></i>
+        <button class="preview" data-icon="reddit">
+            <span class="inner">
+                <ilw-icon icon="reddit"></ilw-icon>
             </span>
             <span class='label'>reddit</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-reddit-line"></i>
+        <button class="preview" data-icon="reddit-line">
+            <span class="inner">
+                <ilw-icon icon="reddit-line"></ilw-icon>
             </span>
             <span class='label'>reddit-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-research"></i>
+        <button class="preview" data-icon="research">
+            <span class="inner">
+                <ilw-icon icon="research"></ilw-icon>
             </span>
             <span class='label'>research</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-research-line"></i>
+        <button class="preview" data-icon="research-line">
+            <span class="inner">
+                <ilw-icon icon="research-line"></ilw-icon>
             </span>
             <span class='label'>research-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-resources"></i>
+        <button class="preview" data-icon="resources">
+            <span class="inner">
+                <ilw-icon icon="resources"></ilw-icon>
             </span>
             <span class='label'>resources</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-resources-line"></i>
+        <button class="preview" data-icon="resources-line">
+            <span class="inner">
+                <ilw-icon icon="resources-line"></ilw-icon>
             </span>
             <span class='label'>resources-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-safety"></i>
+        <button class="preview" data-icon="safety">
+            <span class="inner">
+                <ilw-icon icon="safety"></ilw-icon>
             </span>
             <span class='label'>safety</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-safety-line"></i>
+        <button class="preview" data-icon="safety-line">
+            <span class="inner">
+                <ilw-icon icon="safety-line"></ilw-icon>
             </span>
             <span class='label'>safety-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-search"></i>
+        <button class="preview" data-icon="search">
+            <span class="inner">
+                <ilw-icon icon="search"></ilw-icon>
             </span>
             <span class='label'>search</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-search-line"></i>
+        <button class="preview" data-icon="search-line">
+            <span class="inner">
+                <ilw-icon icon="search-line"></ilw-icon>
             </span>
             <span class='label'>search-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-send"></i>
+        <button class="preview" data-icon="send">
+            <span class="inner">
+                <ilw-icon icon="send"></ilw-icon>
             </span>
             <span class='label'>send</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-send-line"></i>
+        <button class="preview" data-icon="send-line">
+            <span class="inner">
+                <ilw-icon icon="send-line"></ilw-icon>
             </span>
             <span class='label'>send-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-settings"></i>
+        <button class="preview" data-icon="settings">
+            <span class="inner">
+                <ilw-icon icon="settings"></ilw-icon>
             </span>
             <span class='label'>settings</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-settings-line"></i>
+        <button class="preview" data-icon="settings-line">
+            <span class="inner">
+                <ilw-icon icon="settings-line"></ilw-icon>
             </span>
             <span class='label'>settings-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-shop"></i>
+        <button class="preview" data-icon="shop">
+            <span class="inner">
+                <ilw-icon icon="shop"></ilw-icon>
             </span>
             <span class='label'>shop</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-shop-line"></i>
+        <button class="preview" data-icon="shop-line">
+            <span class="inner">
+                <ilw-icon icon="shop-line"></ilw-icon>
             </span>
             <span class='label'>shop-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-sitemap"></i>
+        <button class="preview" data-icon="sitemap">
+            <span class="inner">
+                <ilw-icon icon="sitemap"></ilw-icon>
             </span>
             <span class='label'>sitemap</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-sitemap-line"></i>
+        <button class="preview" data-icon="sitemap-line">
+            <span class="inner">
+                <ilw-icon icon="sitemap-line"></ilw-icon>
             </span>
             <span class='label'>sitemap-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-snapchat"></i>
+        <button class="preview" data-icon="snapchat">
+            <span class="inner">
+                <ilw-icon icon="snapchat"></ilw-icon>
             </span>
             <span class='label'>snapchat</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-snapchat-line"></i>
+        <button class="preview" data-icon="snapchat-line">
+            <span class="inner">
+                <ilw-icon icon="snapchat-line"></ilw-icon>
             </span>
             <span class='label'>snapchat-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-staff"></i>
+        <button class="preview" data-icon="staff">
+            <span class="inner">
+                <ilw-icon icon="staff"></ilw-icon>
             </span>
             <span class='label'>staff</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-staff-line"></i>
+        <button class="preview" data-icon="staff-line">
+            <span class="inner">
+                <ilw-icon icon="staff-line"></ilw-icon>
             </span>
             <span class='label'>staff-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-students"></i>
+        <button class="preview" data-icon="students">
+            <span class="inner">
+                <ilw-icon icon="students"></ilw-icon>
             </span>
             <span class='label'>students</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-students-line"></i>
+        <button class="preview" data-icon="students-line">
+            <span class="inner">
+                <ilw-icon icon="students-line"></ilw-icon>
             </span>
             <span class='label'>students-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-submit"></i>
+        <button class="preview" data-icon="submit">
+            <span class="inner">
+                <ilw-icon icon="submit"></ilw-icon>
             </span>
             <span class='label'>submit</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-submit-line"></i>
+        <button class="preview" data-icon="submit-line">
+            <span class="inner">
+                <ilw-icon icon="submit-line"></ilw-icon>
             </span>
             <span class='label'>submit-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-team"></i>
+        <button class="preview" data-icon="team">
+            <span class="inner">
+                <ilw-icon icon="team"></ilw-icon>
             </span>
             <span class='label'>team</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-team-line"></i>
+        <button class="preview" data-icon="team-line">
+            <span class="inner">
+                <ilw-icon icon="team-line"></ilw-icon>
             </span>
             <span class='label'>team-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-tickets"></i>
+        <button class="preview" data-icon="tickets">
+            <span class="inner">
+                <ilw-icon icon="tickets"></ilw-icon>
             </span>
             <span class='label'>tickets</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-tickets-line"></i>
+        <button class="preview" data-icon="tickets-line">
+            <span class="inner">
+                <ilw-icon icon="tickets-line"></ilw-icon>
             </span>
             <span class='label'>tickets-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-tiktok"></i>
+        <button class="preview" data-icon="tiktok">
+            <span class="inner">
+                <ilw-icon icon="tiktok"></ilw-icon>
             </span>
             <span class='label'>tiktok</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-tiktok-line"></i>
+        <button class="preview" data-icon="tiktok-line">
+            <span class="inner">
+                <ilw-icon icon="tiktok-line"></ilw-icon>
             </span>
             <span class='label'>tiktok-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-training"></i>
+        <button class="preview" data-icon="training">
+            <span class="inner">
+                <ilw-icon icon="training"></ilw-icon>
             </span>
             <span class='label'>training</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-training-line"></i>
+        <button class="preview" data-icon="training-line">
+            <span class="inner">
+                <ilw-icon icon="training-line"></ilw-icon>
             </span>
             <span class='label'>training-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-trash"></i>
+        <button class="preview" data-icon="trash">
+            <span class="inner">
+                <ilw-icon icon="trash"></ilw-icon>
             </span>
             <span class='label'>trash</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-trash-line"></i>
+        <button class="preview" data-icon="trash-line">
+            <span class="inner">
+                <ilw-icon icon="trash-line"></ilw-icon>
             </span>
             <span class='label'>trash-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-twitter"></i>
+        <button class="preview" data-icon="twitter">
+            <span class="inner">
+                <ilw-icon icon="twitter"></ilw-icon>
             </span>
             <span class='label'>twitter</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-twitter-line"></i>
+        <button class="preview" data-icon="twitter-line">
+            <span class="inner">
+                <ilw-icon icon="twitter-line"></ilw-icon>
             </span>
             <span class='label'>twitter-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-unit"></i>
+        <button class="preview" data-icon="unit">
+            <span class="inner">
+                <ilw-icon icon="unit"></ilw-icon>
             </span>
             <span class='label'>unit</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-unit-line"></i>
+        <button class="preview" data-icon="unit-line">
+            <span class="inner">
+                <ilw-icon icon="unit-line"></ilw-icon>
             </span>
             <span class='label'>unit-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-user"></i>
+        <button class="preview" data-icon="user">
+            <span class="inner">
+                <ilw-icon icon="user"></ilw-icon>
             </span>
             <span class='label'>user</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-user-line"></i>
+        <button class="preview" data-icon="user-line">
+            <span class="inner">
+                <ilw-icon icon="user-line"></ilw-icon>
             </span>
             <span class='label'>user-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-video"></i>
+        <button class="preview" data-icon="video">
+            <span class="inner">
+                <ilw-icon icon="video"></ilw-icon>
             </span>
             <span class='label'>video</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-video-line"></i>
+        <button class="preview" data-icon="video-line">
+            <span class="inner">
+                <ilw-icon icon="video-line"></ilw-icon>
             </span>
             <span class='label'>video-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-volume"></i>
+        <button class="preview" data-icon="volume">
+            <span class="inner">
+                <ilw-icon icon="volume"></ilw-icon>
             </span>
             <span class='label'>volume</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-volume-line"></i>
+        <button class="preview" data-icon="volume-line">
+            <span class="inner">
+                <ilw-icon icon="volume-line"></ilw-icon>
             </span>
             <span class='label'>volume-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-website"></i>
+        <button class="preview" data-icon="website">
+            <span class="inner">
+                <ilw-icon icon="website"></ilw-icon>
             </span>
             <span class='label'>website</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-website-line"></i>
+        <button class="preview" data-icon="website-line">
+            <span class="inner">
+                <ilw-icon icon="website-line"></ilw-icon>
             </span>
             <span class='label'>website-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-weibo"></i>
+        <button class="preview" data-icon="weibo">
+            <span class="inner">
+                <ilw-icon icon="weibo"></ilw-icon>
             </span>
             <span class='label'>weibo</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-weibo-line"></i>
+        <button class="preview" data-icon="weibo-line">
+            <span class="inner">
+                <ilw-icon icon="weibo-line"></ilw-icon>
             </span>
             <span class='label'>weibo-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-whatsapp"></i>
+        <button class="preview" data-icon="whatsapp">
+            <span class="inner">
+                <ilw-icon icon="whatsapp"></ilw-icon>
             </span>
             <span class='label'>whatsapp</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-whatsapp-line"></i>
+        <button class="preview" data-icon="whatsapp-line">
+            <span class="inner">
+                <ilw-icon icon="whatsapp-line"></ilw-icon>
             </span>
             <span class='label'>whatsapp-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-workshop"></i>
+        <button class="preview" data-icon="workshop">
+            <span class="inner">
+                <ilw-icon icon="workshop"></ilw-icon>
             </span>
             <span class='label'>workshop</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-workshop-line"></i>
+        <button class="preview" data-icon="workshop-line">
+            <span class="inner">
+                <ilw-icon icon="workshop-line"></ilw-icon>
             </span>
             <span class='label'>workshop-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-x"></i>
+        <button class="preview" data-icon="x">
+            <span class="inner">
+                <ilw-icon icon="x"></ilw-icon>
             </span>
             <span class='label'>x</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-x-line"></i>
+        <button class="preview" data-icon="x-line">
+            <span class="inner">
+                <ilw-icon icon="x-line"></ilw-icon>
             </span>
             <span class='label'>x-line</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-youtube"></i>
+        <button class="preview" data-icon="youtube">
+            <span class="inner">
+                <ilw-icon icon="youtube"></ilw-icon>
             </span>
             <span class='label'>youtube</span>
-        </div>
+        </button>
 
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-youtube-line"></i>
+        <button class="preview" data-icon="youtube-line">
+            <span class="inner">
+                <ilw-icon icon="youtube-line"></ilw-icon>
             </span>
             <span class='label'>youtube-line</span>
-        </div>
+        </button>
 </div>
 <div class="icon-sizes">
 
@@ -1270,5 +1282,19 @@
             </span>
     </div>
 </div>
+
+<script>
+    for (let button of document.querySelectorAll("button")) {
+        button.addEventListener("click", (ev) => {
+            console.log("click", button);
+            for (let other of document.querySelectorAll("button")) {
+                other.classList.remove("copied");
+            }
+            button.classList.add("copied");
+            let icon = button.dataset.icon;
+            navigator.clipboard.writeText(`<ilw-icon icon="${icon}"></ilw-icon>`)
+        });
+    }
+</script>
 </body>
 </html>

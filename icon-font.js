@@ -41,12 +41,12 @@ getIconList().then(async (icons) => {
         .flatMap((it) => [it, `${it}-line`])
         .map((it) => {
             return `
-        <div class="preview">
-            <span class="inner" tabindex="0">
-                <i class="ilw-icon ilw-icon-${it}"></i>
+        <button class="preview" data-icon="${it}">
+            <span class="inner">
+                <ilw-icon icon="${it}"></ilw-icon>
             </span>
             <span class='label'>${it}</span>
-        </div>`;
+        </button>`;
         });
 
     let template = await readFile("src/templates/ilw-icon.template.html", "utf-8");

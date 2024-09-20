@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
-    <link rel="stylesheet" type="text/css" href="./ilw-icon.css" />
+    <link rel="stylesheet" href="./ilw-icon.css">
+    <script type="module" src="./ilw-icon.js"></script>
 
     <style>
         body {
@@ -25,6 +26,8 @@
         .preview {
             background:#fff;
             border: 1px solid var(--il-storm-lighter-3);
+            padding: 0;
+            cursor: pointer;
         }
         .preview .inner {
             width: 180px;
@@ -34,6 +37,7 @@
             align-items: center;
             text-align: center;
             font-size: 84px;
+            position: relative;
         }
         .preview .inner:hover {
             background: var(--il-blue);
@@ -47,6 +51,14 @@
 
         .preview .inner i {
             display: block;
+        }
+
+        .preview.copied .inner:after {
+            content: "Copied!";
+            position: absolute;
+            bottom: 2px;
+            font-size: 14px;
+            font-weight: bold;
         }
         .label {
             display: block;
@@ -109,5 +121,19 @@
             </span>
     </div>
 </div>
+
+<script>
+    for (let button of document.querySelectorAll("button")) {
+        button.addEventListener("click", (ev) => {
+            console.log("click", button);
+            for (let other of document.querySelectorAll("button")) {
+                other.classList.remove("copied");
+            }
+            button.classList.add("copied");
+            let icon = button.dataset.icon;
+            navigator.clipboard.writeText(`<ilw-icon icon="${icon}"></ilw-icon>`)
+        });
+    }
+</script>
 </body>
 </html>
