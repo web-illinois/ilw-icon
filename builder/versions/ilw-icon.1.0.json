@@ -1,0 +1,59 @@
+{
+    "title": "Icon",
+    "tag": "ilw-icon",
+    "github": "https://github.com/web-illinois/ilw-icon/",
+    "type": "web component",
+    "element-name": "ilw-icon",
+    "description": "A wrapper class to pull the icons from https://cdn.brand.illinois.edu/icons.html",
+    "builder-version": "1.0",
+    "version": "1.0.0",
+    "date": "10/22/2024",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-icon/1.0.0/ilw-icon.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-icon/1.0.0/ilw-icon.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "",
+    "attributes-fixed": [],
+    "attributes-text": [
+        {
+            "name": "icon",
+            "description": "Icon name: use the name from https://cdn.brand.illinois.edu/icons.html",
+            "depreciated": false,
+            "value": "admissions"
+        },
+        {
+            "name": "alt",
+            "description": "Alternative text, defaults to the icon name plus 'icon'",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "size",
+            "description": "Width in CSS value and unit, defaults to 48px",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
+        {
+            "name": "type",
+            "description": "Type of icon",
+            "depreciated": false,
+            "values": [
+                "",
+                "solid",
+                "line",
+                "duo"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+        {
+            "name": "--ilw-icon--color",
+            "description": "Color, defaults to currentColor",
+            "depreciated": false
+        }
+    ]
+}
