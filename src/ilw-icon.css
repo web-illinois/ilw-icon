@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "ilw-icon";
+    src: url("./fonts/ilw-icon.woff2?540d27a0259b5ca4b438c71296155783") format("woff2"),
+    url("./fonts/ilw-icon.woff?540d27a0259b5ca4b438c71296155783") format("woff");
+}

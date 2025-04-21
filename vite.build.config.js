@@ -11,6 +11,8 @@ export default defineConfig({
             fileName: "ilw-icon",
             formats: ["es", "cjs", "umd"],
         },
+
+
         rollupOptions: {
             output: {
                 assetFileNames: (chunkInfo) => {
