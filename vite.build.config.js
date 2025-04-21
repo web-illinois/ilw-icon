@@ -9,7 +9,7 @@ export default defineConfig({
             name: "ilw-icon",
             entry: "ilw-icon.js",
             fileName: "ilw-icon",
-            formats: ["es", "cjs", "umd"],
+            formats: ["es"],
         },
 
 
