@@ -15,6 +15,21 @@
     "parent-style": "font-size: 60px; text-align: center;",
     "attributes-fixed": [],
     "attributes-text": [
+
+        {
+            "name": "alt",
+            "description": "Alternative text. If omitted, aria-hidden is used",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "size",
+            "description": "Size in CSS value and unit.",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
         {
             "name": "icon",
             "description": "Icon name: use the name from https://cdn.brand.illinois.edu/icons.html",
@@ -203,21 +218,7 @@
                 "youtube",
                 "youtube-line"
             ]
-        },
-        {
-            "name": "alt",
-            "description": "Alternative text. If omitted, aria-hidden is used",
-            "depreciated": false,
-            "value": ""
-        },
-        {
-            "name": "size",
-            "description": "Size in CSS value and unit.",
-            "depreciated": false,
-            "value": ""
         }
-    ],
-    "attributes": [
     ],
     "classes-fixed": [],
     "classes": [],
