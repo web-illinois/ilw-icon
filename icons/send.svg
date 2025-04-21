@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.26 51.26"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><polygon class="cls-1" points="45.79 12.25 16.62 27.43 18.23 39.57 22.2 30.28 45.79 12.25"/><polygon class="cls-1" points="4.85 21.11 15.29 26.71 45.05 11.69 4.85 21.11"/><polygon class="cls-1" points="23.28 31.02 35.7 39.57 46.41 12.93 23.28 31.02"/><polygon class="cls-1" points="22.73 32.18 19.62 39.47 26.75 34.86 22.8 32.13 22.73 32.18"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.26 51.26">
+  <g fill="#FFFFFF">
+    <path d="M45.79 12.25 16.62 27.43l1.61 12.14 3.97-9.29 23.59-18.03zM4.85 21.11l10.44 5.6 29.76-15.02-40.2 9.42z"/>
+    <path d="m23.28 31.02 12.42 8.55 10.71-26.64-23.13 18.09zM22.73 32.18l-3.11 7.29 7.13-4.61-3.95-2.73-.07.05z"/>
+  </g>
+</svg>
