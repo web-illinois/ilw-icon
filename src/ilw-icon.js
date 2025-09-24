@@ -46,11 +46,8 @@ class Icon extends LitElement {
             class=${classMap(classes)}
             style=${styleMap(styles)}
                 aria-hidden=${this.alt ? nothing : "true"}
-        >
-            ${ this.alt ? html`
-                <span class="sr-only">${this.alt}</span>
-            ` : '' }
-        </span>`;
+            aria-label=${this.alt ? this.alt : nothing}
+        ></span>`;
     }
 }
 
