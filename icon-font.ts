@@ -5,6 +5,18 @@ import {join} from "node:path";
 import {Readable} from "stream";
 import {finished} from "stream/promises";
 
+type Icon = {
+    name: string;
+    colors: {
+        name: string;
+        styles: {
+            name: string;
+            svg: string;
+            alt: string;
+        }[];
+    }[];
+};
+
 /**
  * Get the list of icons.
  *
@@ -14,14 +26,14 @@ import {finished} from "stream/promises";
  */
 async function getIconList() {
     const res = await fetch("https://cdn.brand.illinois.edu/icons.json");
-    const icons = JSON.parse(await res.text());
+    const icons: Icon[] = JSON.parse(await res.text());
 
     return icons.flatMap(icon => {
         const white = icon.colors
-            .find(it => it.name === "white")
+            .find(it => it.name === "white")!
 
-        const solid = white.styles.find(it => it.name === "solid");
-        const line = white.styles.find(it => it.name === "line");
+        const solid = white.styles.find(it => it.name === "solid")!;
+        const line = white.styles.find(it => it.name === "line")!;
 
         return [
             {
@@ -48,7 +60,7 @@ getIconList().then(async (icons) => {
     // Create a JSON with the icons that has the unicode hex value,
     // alt text, and sample usage as ilw-icon
     const iconMap = Object.entries(result.codepoints).map(([key, value]) => {
-        const icon = icons.find(it => it.icon === key);
+        const icon = icons.find(it => it.icon === key)!;
         return {
             icon: key,
             unicode: value.toString(16),
@@ -103,19 +115,13 @@ async function generate() {
     });
 }
 
-/**
- *
- * @param {{icon: string, url: string}[]} icons
- * @param {string} outdir
- * @returns {Promise<void>}
- */
-async function downloadIcons(icons, outdir) {
+async function downloadIcons(icons: {icon: string, url: string}[], outdir: string) {
     await mkdir(outdir, {recursive: true});
 
     for (let it of icons) {
         let path = join(outdir, it.icon + ".svg");
         let stream = createWriteStream(path, {flags: "w"});
         let res = await fetch(it.url);
-        await finished(Readable.fromWeb(res.body).pipe(stream));
+        await finished(Readable.fromWeb(res.body as any).pipe(stream));
     }
 }

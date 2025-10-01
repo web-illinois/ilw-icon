@@ -4,19 +4,17 @@ import { defineConfig } from "vite";
 export default defineConfig({
     root: "src",
     build: {
-        outDir: "../dist",
+        outDir: "../dist/cdn",
         lib: {
             name: "ilw-icon",
-            entry: "ilw-icon.js",
+            entry: "ilw-icon.ts",
             fileName: "ilw-icon",
             formats: ["es"],
         },
-
-
         rollupOptions: {
             output: {
-                assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "ilw-icon.css";
+                assetFileNames: () => {
+                    return "[name][extname]";
                 },
             },
         },
