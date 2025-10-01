@@ -7,7 +7,7 @@
     "description": "A wrapper class to pull the icons from https://cdn.brand.illinois.edu/icons.html",
     "builder-version": "1.2-beta",
     "version": "1.2.0-beta",
-    "date": "04/21/2025",
+    "date": "10/01/2025",
     "css": "https://dev.toolkit.illinois.edu/ilw-icon/1.2.0-beta/ilw-icon.css",
     "js": "https://dev.toolkit.illinois.edu/ilw-icon/1.2.0-beta/ilw-icon.js",
     "production": false,
