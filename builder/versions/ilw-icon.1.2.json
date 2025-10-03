@@ -5,17 +5,16 @@
     "type": "web component",
     "element-name": "ilw-icon",
     "description": "A wrapper class to pull the icons from https://cdn.brand.illinois.edu/icons.html",
-    "builder-version": "1.2-beta",
-    "version": "1.2.0-beta",
-    "date": "10/01/2025",
-    "css": "https://dev.toolkit.illinois.edu/ilw-icon/1.2.0-beta/ilw-icon.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-icon/1.2.0-beta/ilw-icon.js",
-    "production": false,
+    "builder-version": "1.2",
+    "version": "1.2.0",
+    "date": "10/03/2025",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-icon/1.2.0/ilw-icon.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-icon/1.2.0/ilw-icon.js",
+    "production": true,
     "notes": "",
     "parent-style": "font-size: 60px; text-align: center;",
     "attributes-fixed": [],
     "attributes-text": [
-
         {
             "name": "alt",
             "description": "Alternative text. If omitted, aria-hidden is used",

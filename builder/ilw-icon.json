@@ -5,7 +5,8 @@
     "type": "web component",
     "element-name": "ilw-icon",
     "description": "Wrapper to pull the icons from https://cdn.brand.illinois.edu/icons.html and manage state",
-    "toolkit-version": "1.1",
-    "production-version": "1.1",
-    "development-version": "1.2-beta"
+    "purpose": "Use the campus icon library.",
+    "toolkit-version": "1.2",
+    "production-version": "1.2",
+    "development-version": "1.2"
 }
