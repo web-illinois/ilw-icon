@@ -25,26 +25,25 @@ type Icon = {
  * @returns {Promise<{icon: string, url: string, alt: string}[]>}
  */
 async function getIconList() {
-    const res = await fetch("https://cdn.brand.illinois.edu/icons.json");
+    const res = await fetch("https://api.brand.illinois.edu/icons");
     const icons: Icon[] = JSON.parse(await res.text());
 
     return icons.flatMap(icon => {
-        const white = icon.colors
-            .find(it => it.name === "white")!
-
-        const solid = white.styles.find(it => it.name === "solid")!;
-        const line = white.styles.find(it => it.name === "line")!;
+        const solid = icon.styles.find(it => it.name === "solid")!
+        const line = icon.styles.find(it => it.name === "line")!
+        const solidwhite = solid.colors.find(it => it.name === "white")!
+        const linewhite = line.colors.find(it => it.name === "white")!
 
         return [
             {
                 icon: icon.name,
-                url: solid.svg,
-                alt: solid.alt
+                url: solidwhite.svg,
+                alt: icon.alt
             },
             {
                 icon: `${icon.name}-line`,
-                url: line.svg,
-                alt: line.alt
+                url: linewhite.svg,
+                alt: icon.alt
             }
         ]
     })
