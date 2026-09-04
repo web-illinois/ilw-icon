@@ -44,16 +44,16 @@
         "lit": "3.1.3"
     },
     "devDependencies": {
-        "@illinois-toolkit/ilw-core": "^1.0.3",
+        "@illinois-toolkit/ilw-core": "^2.1.0",
         "typescript": "^5.9.2",
-        "vite": "^7.1.3",
+        "vite": "^8.2.2",
         "vite-plugin-dts": "^4.5.4",
         "fantasticon": "^4.1.0",
         "@axe-core/playwright": "^4.10.2",
         "@playwright/test": "^1.54.1",
         "axe-html-reporter": "^2.2.11",
         "playwright": "^1.54.1",
-        "@vitest/browser": "^3.2.4",
+        "@vitest/browser": "^5.0.0",
         "vitest-browser-lit": "^0.1.0"
     }
 }
