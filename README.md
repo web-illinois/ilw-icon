@@ -52,3 +52,11 @@ may be confusing for someone outside the University. Also ensure that your targe
 * https://lit.dev/docs/api/templates/#nothing
 * https://en.wikipedia.org/wiki/Mystery_meat_navigation#Iconographic_navigation
 * https://github.com/tancredi/fantasticon
+
+## Generating fonts
+
+Fonts are generated using the icon-font.ts file using the `https://api.brand.illinois.edu/icons` API from StratCom. 
+
+To rebuild the font file, you will need to run the `fonts` NPM package. This will also download the fonts if your environment variable is set properly. This requires an .env file that will set the `DOWNLOAD_ICONS` to true. **Note that the .env file is tracked in Git, so do not put any secret information in it.**
+
+There is a bug that prevents fantasticon to work on Windows machines. https://github.com/tancredi/fantasticon/issues/528. The easiest fix is to update the files in /node_modules/fantasticon/dist/ -- look for globPath and add the statement `.replace(/\\/g, '/')` after it -- this will normalize the path.
