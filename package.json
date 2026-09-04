@@ -1,7 +1,7 @@
 {
     "name": "@illinois-toolkit/ilw-icon",
     "description": "A wrapper class to pull the icons from https://cdn.brand.illinois.edu/icons.html",
-    "repository": "github:bryanjonker-illinois/ilw-icon",
+    "repository": "github:web-illinois/ilw-icon",
     "private": false,
     "license": "MIT",
     "version": "1.2.1",
