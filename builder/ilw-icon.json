@@ -1,12 +1,26 @@
 {
-    "title": "Icon",
-    "tag": "ilw-icon",
-    "github": "https://github.com/web-illinois/ilw-icon/",
-    "type": "web component",
-    "element-name": "ilw-icon",
-    "description": "Wrapper to pull the icons from https://cdn.brand.illinois.edu/icons.html and manage state",
-    "purpose": "Use the campus icon library.",
-    "toolkit-version": "1.2",
-    "production-version": "1.2",
-    "development-version": "1.2"
+  "title": "Icon",
+  "id": "ilw-icon",
+  "type": "Web Component",
+  "repository-name": "ilw-icon",
+  "description": "Add accessible Illinois brand icons to buttons, links, labels, and other interface elements, with configurable size and styling.",
+  "purpose": "Use the campus icon library.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.1"
+    },
+    {
+      "name": "1.2",
+      "notes": "",
+      "template": "1.2"
+    }
+  ]
 }
