@@ -45,9 +45,9 @@
     },
     "devDependencies": {
         "@axe-core/playwright": "^4.10.2",
-        "@illinois-toolkit/ilw-core": "^1.0.3",
+        "@illinois-toolkit/ilw-core": "^2.1.0",
         "@playwright/test": "^1.65.1",
-        "@vitest/browser": "^3.2.4",
+        "@vitest/browser": "^5.1.1",
         "axe-html-reporter": "^2.2.11",
         "fantasticon": "^4.1.0",
         "playwright": "^1.54.1",
